@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="title">
+        <h1>Herramientas para desarrollar Pensamiento Computacional</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0" *ngFor="let herramienta of herramientas">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{herramienta.nombre}}</h5>
+                    <p class="card-text">{{herramienta.descripcion}}</p>
+                    <a href="{{herramienta.url}}" class="btn btn-primary">{{herramienta.url}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
